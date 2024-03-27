@@ -27,5 +27,5 @@ jobs:
         with:
           context: .
           push: true
-          #tags: "some-tag"
-          #labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
